@@ -564,6 +564,7 @@ body>div>h1, body>div>button, body>div>img, body>div>table, body>div>div>ul, bod
     display: block;
     margin: 0 auto;
     border-radius: 50px;
+    max-width: 600px;
 }
 #gonzalitas_time{
     display: block;
