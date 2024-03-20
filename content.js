@@ -39,7 +39,7 @@ const cerveza = {
         'description':'Clamato, Limón, salsas, sal y agua mineral',
         'flavors':[],
         'table':[
-            {'option':'Corona / Victoria', 'price_litro':85,  'price_top':135},
+            {'option':'Corona / Victoria', 'price_litro':80,  'price_top':130},
         ]},
     ),
 };
@@ -68,8 +68,8 @@ const bebidas = {
             {'option':' ', 'price_litro':100,  'price_top':150},
         ]},
         {'subtitle':'Cuba',
-        'description':'Ron Bacardi, agua mineral, cocoa, toque de limon',
-        'flavors':['Campechano (agua mineral y cooca)', 'Pintado (poca Coca Cola)'],
+        'description':'Ron Bacardi, agua mineral, coca, toque de limon',
+        'flavors':['Campechano (agua mineral y coca)', 'Pintado (poca coca cola)'],
         'table':[
             {'option':' ', 'price_litro':110,  'price_top':160},
         ]},
@@ -90,7 +90,7 @@ const bebidas = {
         ]},
         {'subtitle':'Diablito',
         'btn':true,
-        'description':'Vodka Smirnoff tamarindo, refresco de lima, refresco de toronja, pulpa de tamarindo. (Con paleta de tamarindo que solo aplica en el primer litro)',
+        'description':'Vodka Smirnoff tamarindo, refresco de lima, refresco de toronja, pulpa de tamarindo. (Con paleta de tamarindo que solo aplica en el primer litro) (C/Topping no aplica paleta)',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':130,  'price_top':180},
@@ -124,7 +124,7 @@ const bebidas = {
         ]},
         {'subtitle':'Paloma',
         'btn':true,
-        'description':'Tequila Jose Cuervo Especial o Mezcal Moskalti',
+        'description':'Tequila Jose Cuervo Especial o Mezcal Moskalti, limon, sal, refresco de toronja',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':120,  'price_top':170},
@@ -148,6 +148,7 @@ const bebidas = {
             {'option':' ', 'price_litro':90,  'price_top':140},
         ]},
         {'subtitle':'Sirena',
+        'btn':true,
         'description':'Mezcal Tobala, Concentrado de Jamaica, Limon',
         'flavors':[],
         'table':[
@@ -364,7 +365,7 @@ const aguachiles = {
         ]},
         {'subtitle':'Aguachile_Mango_Temporada',
         'btn':true,
-        'description':'Camaron crudo, salsa de aguachile verde, cebolla, pepino y mango',
+        'description':'Camaron crudo, salsa de aguachile verde con mango, cebolla, pepino y mango',
         'flavors':[],
         'table':[
             {'option':'Chico',        'price_unique_bullet':190},
@@ -401,7 +402,7 @@ const ceviches = {
             {'option':'Como Topping', 'price_unique_bullet':175},
         ]},
         {'subtitle':'Ceviche Pulpo',
-        'description':'Camaron crudo, pulpo, clamato, deliciosas salsas negras, jitomate,cebolla, pepino y cilantro',
+        'description':'Camaron crudo, pulpo, clamato, deliciosas salsas negras, jitomate, cebolla, pepino y cilantro',
         'flavors':[],
         'table':[
             {'option':'Chico',        'price_unique_bullet':210},
@@ -810,6 +811,16 @@ const open_paloma  = document.querySelector("#open_paloma");
 const close_paloma = document.querySelector("#close_paloma");
 open_paloma.addEventListener("click", ()=>{
     modal_paloma.showModal();
+});
+close_paloma.addEventListener("click", ()=>{
+    modal_paloma.close();
+});
+
+const modal_sirena = document.querySelector("#modal_sirena");
+const open_sirena  = document.querySelector("#open_sirena");
+const close_sirena = document.querySelector("#close_sirena");
+open_sirena.addEventListener("click", ()=>{
+    modal_sirena.showModal();
 });
 close_paloma.addEventListener("click", ()=>{
     modal_paloma.close();
