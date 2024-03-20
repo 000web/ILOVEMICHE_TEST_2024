@@ -822,8 +822,8 @@ const close_sirena = document.querySelector("#close_sirena");
 open_sirena.addEventListener("click", ()=>{
     modal_sirena.showModal();
 });
-close_paloma.addEventListener("click", ()=>{
-    modal_paloma.close();
+close_sirena.addEventListener("click", ()=>{
+    modal_sirena.close();
 });
 
 const modal_aguachile_clasico_ilovemiche = document.querySelector("#modal_aguachile_clasico_ilovemiche");
