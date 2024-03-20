@@ -867,6 +867,17 @@ close_torre_ilovemiche.addEventListener("click", ()=>{
 
 
 
+/* Preloader */
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".preloader");
+    //const content = document.querySelector(".content");
+    // Hide preloader and show content when everything is loaded
+    loader.style.display = "none";
+    //content.style.display = "block";
+  });
+
+
+
 
 
 /*
