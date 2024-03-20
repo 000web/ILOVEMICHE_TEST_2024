@@ -497,7 +497,7 @@ body >div{
 
 
 /*BE CAREFUL NOT TO AFFECT THE FOOTER*/
-body>div>h1, body>div>button, body>div>div>ul, body>div>div>img, body>div>h3, body>div>p, body>div>section, body>div>div>h3, body>div>div>p, body>div>div>table, body>div>div>div>img, body>div>div>div>ul{
+body>div>h1, body>div>button, body>div>table, body>div>div>ul, body>div>div>img, body>div>h3, body>div>p, body>div>section, body>div>div>h3, body>div>div>p, body>div>div>table, body>div>div>div>img, body>div>div>div>ul{
     animation: fade-in linear;
     animation-timeline: view(100% 0%);
 }
