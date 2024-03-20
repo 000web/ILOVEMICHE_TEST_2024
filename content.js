@@ -871,12 +871,10 @@ close_torre_ilovemiche.addEventListener("click", ()=>{
 window.addEventListener("load", function() {
     const loader = document.querySelector(".preloader");
     //const content = document.querySelector(".content");
-    // Hide preloader and show content when everything is loaded
+    //Hide preloader and show content when everything is loaded
     loader.style.display = "none";
     //content.style.display = "block";
-  });
-
-
+});
 
 
 
@@ -941,3 +939,231 @@ close_botanas.addEventListener("click", ()=>{
     modal_botanas.close();
 });
 */
+
+
+
+
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+/*
+const alitas = {
+    'product':'alitas',
+    'description':'',
+    'content':Array(
+        {'subtitle':'',
+        'description':'',
+        'flavors':[],
+        'table':[
+            {'item':'sencilllas', 'detail':'(6pzas) Con verdura y aderezo',                               'price':115},
+            {'item':'duo',        'detail':'(6pzas) Con una pequeña porción de papas, verdura y aderezo', 'price':150},
+        ]},
+    ),
+};
+html_alitas = document.getElementById('alitas');
+alitas.content[0].table.forEach(block=>{
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    td1.innerText = '';
+    row1.appendChild(td1);
+    row1.appendChild(td2);
+    html_alitas.appendChild(row1);
+});
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------*/
+const alitas = {
+    'product':'alitas',
+    'description':'',
+    'content': [
+        {
+            'subtitle': '',
+            'description': '',
+            'flavors': [],
+            'table': [
+                {'item': 'sencilllas', 'detail': '(6pzas) Con verdura y aderezo',                                       'price': 115},
+                {'item': 'duo',        'detail': '(6pzas) Con una pequeña porción de papas, verdura y aderezo',         'price': 150},
+                {'item': 'combo 1',    'detail': '(12pzas) Acompañadas de nachos con queso, verdura y aderezo',         'price': 215},
+                {'item': 'combo 2',    'detail': '(20pzas) Acompañadas de nachos con queso, verdura y aderezo',         'price': 315},
+                {'item': 'combo 3',    'detail': '(30pzas) Acompañadas de nachos con queso/chorizo, verdura y aderezo', 'price': 495},
+                {'item': 'combo 4',    'detail': '(50pzas) Acompañadas de nachos con queso/chorizo, verdura y aderezo', 'price': 770},
+            ]
+        },
+    ],
+};
+const html_alitas = document.getElementById('alitas');
+alitas.content[0].table.forEach(block => {
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    td1.classList.add('thick', 'orange');
+    td2.innerText = '';
+    row1.appendChild(td1);
+    row1.appendChild(td2);
+    row1.classList.add('btop');
+    html_alitas.appendChild(row1);
+    
+    const row2 = document.createElement('tr');
+    const td3 = document.createElement('td');
+    const td4 = document.createElement('td');
+    td3.innerText = block.detail;
+    td4.innerText = `$ ${block.price}`;
+    td4.classList.add('ral', 'orange');
+    row2.appendChild(td3);
+    row2.appendChild(td4);
+    html_alitas.appendChild(row2);
+});
+
+const costillas = {
+    'product':'costillas',
+    'description':'',
+    'content': [
+        {
+            'subtitle': '',
+            'description': '',
+            'flavors': [],
+            'table': [
+                {'item':'300 g', 'detail':'', 'price':135},
+                {'item':'50 g',  'detail':'', 'price':230},
+                {'item':'1 Kg',  'detail':'', 'price':460},
+            ]
+        },
+    ],
+};
+const html_costillas = document.getElementById('costillas');
+costillas.content[0].table.forEach(block => {
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    //td1.classList.add('thick', 'orange');
+    td1.classList.add('thick');
+    td2.innerText = `$ ${block.price}`
+    td2.classList.add('ral', 'orange');
+    row1.appendChild(td1);
+    row1.appendChild(td2);
+    row1.classList.add('btop');
+    html_costillas.appendChild(row1);
+});
+
+const salsas = {
+    'product':'salsas',
+    'description':'',
+    'content': [
+        {
+            'subtitle': '',
+            'description': '',
+            'flavors': [],
+            'table': [
+                {'item':'BBQ'},
+                {'item':'Mango'},
+                {'item':'Mango Habanero'},
+                {'item':'Original'},
+                {'item':'Mango Sriracha'},
+                {'item':'Picositas'},
+            ]
+        },
+    ],
+};
+const html_salsas = document.getElementById('salsas');
+salsas.content[0].table.forEach(block => {
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    //td1.classList.add('thick', 'orange');
+    td1.classList.add('thick');
+    row1.appendChild(td1);
+    row1.classList.add('btop');
+    html_salsas.appendChild(row1);
+});
+
+const extra = {
+    'product':'extra',
+    'description':'',
+    'content': [
+        {
+            'subtitle': '',
+            'description': '',
+            'flavors': [],
+            'table': [
+                {'item':'Aderezo Extra', 'detail':'', 'price':10},
+                {'item':'Alita Extra',   'detail':'', 'price':20},
+                {'item':'Carne Extra (Mixta, Canadiense y Taxqueña)',  'detail':'', 'price':75},
+                {'item':'Carne Extra (Mexicana)',  'detail':'', 'price':85},
+            ]
+        },
+    ],
+};
+const html_extra = document.getElementById('extra');
+extra.content[0].table.forEach(block => {
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    //td1.classList.add('thick', 'orange');
+    td1.classList.add('thick');
+    td2.innerText = `$ ${block.price}`
+    td2.classList.add('ral', 'orange');
+    row1.appendChild(td1);
+    row1.appendChild(td2);
+    row1.classList.add('btop');
+    html_extra.appendChild(row1);
+});
+
+const hamburguesas = {
+    'product':'hamburguesas',
+    'description':'',
+    'content': [
+        {
+            'subtitle': '',
+            'description': '',
+            'flavors': [],
+            'table': [
+                {'item': 'SENCILLA', 'detail': 'Carne mixta / lechuga / jitomate / cebolla caramelizada / queso manchego',                                       'price': 115},
+                {'item': 'HAWAIANA',        'detail': 'Carne mixta / lechuga / jitomate / piña / tocino / cebolla caramelizada / queso manchego / jamón',         'price': 130},
+                {'item': 'CANADIENSE',    'detail': 'Pechuga empanizada / lechuga / jitomate / cebolla caramelizada / queso manchego / tocino / salsa BBQ',         'price': 125},
+                {'item': 'TAXQUEÑA',    'detail': 'Carne al pastor / chile morrón / piña / queso manchego / cebolla caramelizada',         'price': 135},
+                {'item': 'MEXICANA',    'detail': 'Carne arrachera / lechuga / jitomate / cebolla caramelizada / queso manchego / guacamole', 'price': 135},
+                {'item': 'MAMALONA',    'detail': 'Combinación de SENCILLA / HAWAIANA / CANADIENSE', 'price': 295},
+            ]
+        },
+    ],
+};
+const html_hamburguesas = document.getElementById('hamburguesas');
+hamburguesas.content[0].table.forEach(block => {
+    const row1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    td1.innerText = block.item.toUpperCase();
+    td1.classList.add('thick', 'orange');
+    td2.innerText = '';
+    row1.appendChild(td1);
+    row1.appendChild(td2);
+    row1.classList.add('btop');
+    html_hamburguesas.appendChild(row1);
+    
+    const row2 = document.createElement('tr');
+    const td3 = document.createElement('td');
+    const td4 = document.createElement('td');
+    td3.innerText = block.detail;
+    td4.innerText = `$ ${block.price}`;
+    td4.classList.add('ral', 'orange');
+    row2.appendChild(td3);
+    row2.appendChild(td4);
+    html_hamburguesas.appendChild(row2);
+});
+
+
+
+const modal_gonzalitas = document.querySelector("#modal_gonzalitas");
+const open_gonzalitas  = document.querySelector("#open_gonzalitas");
+const close_gonzalitas = document.querySelector("#close_gonzalitas");
+open_gonzalitas.addEventListener("click", ()=>{
+    modal_gonzalitas.showModal();
+});
+close_gonzalitas.addEventListener("click", ()=>{
+    modal_gonzalitas.close();
+});

@@ -63,7 +63,8 @@ body{ /* Grid Space */
     "aguachiles"
     "ceviches"
     "mariscos-images"
-    "botanas";
+    "botanas"
+    "gonzalitas";
 }
 #header{grid-area: header;}
 #pidelo{grid-area: pidelo;}
@@ -80,6 +81,7 @@ body{ /* Grid Space */
 #ceviches{grid-area: ceviches;}
 #mariscos-images{grid-area: mariscos-images;}
 #botanas{grid-area: botanas;}
+#gonzalitas{grid-area: gonzalitas;}
 
 
 
@@ -173,7 +175,7 @@ td, th {
 
 
 .warning{
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(15, 15, 15);
     color: rgb(190, 23, 23);
     display: flex;
     flex-direction: column;
@@ -190,7 +192,7 @@ td, th {
     margin-bottom: 0rem;
 }
 .warning >*, .warning >*>*{
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(15, 15, 15);
     color: rgb(190, 23, 23);
 }
 
@@ -495,7 +497,7 @@ body >div{
 
 
 /*BE CAREFUL NOT TO AFFECT THE FOOTER*/
-body>div>h1, body>div>button, body>div>div>ul, body>div>div>img, body>div>h3, body>div>p, body>div>section, body>div>div>h3, body>div>div>p, body>div>div>table, body>div>div>div>img, body>div>div>div>ul{
+body>div>h1, body>div>button, body>div>img, body>div>table, body>div>div>ul, body>div>div>img, body>div>h3, body>div>p, body>div>section, body>div>div>h3, body>div>div>p, body>div>div>table, body>div>div>div>img, body>div>div>div>ul{
     animation: fade-in linear;
     animation-timeline: view(100% 0%);
 }
@@ -553,3 +555,56 @@ body>div>h1, body>div>button, body>div>div>ul, body>div>div>img, body>div>h3, bo
 .content {
     display: none;
 }
+*/
+
+
+
+#gonzalitas_logo{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+#gonzalitas_time{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(15, 15, 15);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.gonzalitas_table>*, .gonzalitas_table>tr>td{
+    background-color: rgb(15, 15, 15);
+}
+.gonzalitas_table>caption{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.thick{
+    font-weight: 600;
+}
+.orange{
+    color: #FF4E28;
+}
+#imgs_gonzalitas>img{
+    border-radius: 50%;
+}
+
+
+
+
+/*
+*{
+    border: 1px solid greenyellow;
+}
+*/
