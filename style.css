@@ -1,0 +1,500 @@
+/* IMPORTANT FOR MOBILE VISUALIZATION */
+@-o-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0
+}
+/* END IMPORTANT FOR MOBILE VISUALIZATION */
+
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>:     Use a value from 100 to 900             */
+.noto-sans-custom {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Choose a weight value from 100 to 900 */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+* {
+    /* Apply the styles to all elements */
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Choose a weight value from 100 to 900 */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 0.9rem;
+    /* Apply the black background to all elements */
+    background-color: black;
+    color: white; /* Set text color to white for better readability */
+    /* Apply 0 margin for all html elements */
+    margin: 0px;
+}
+
+
+
+body{ /* Grid Space */
+    width: 100%;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "pidelo"
+    "escarchado"
+    "chamoyadas"
+    "cerveza"
+    "bebidas"
+    "topp"
+    "cubetas"
+    "tablas"
+    "varios"
+    "mariscos"
+    "aguachiles"
+    "ceviches"
+    "mariscos-images"
+    "botanas";
+}
+#header{grid-area: header;}
+#pidelo{grid-area: pidelo;}
+#escarchado{grid-area: escarchado;}
+#chamoyadas{grid-area: chamoyadas;}
+#cerveza{grid-area: cerveza;}
+#bebidas{grid-area: bebidas;}
+#topp{grid-area: topp;}
+#cubetas{grid-area: cubetas;}
+#tablas{grid-area: tablas;}
+#varios{grid-area: varios;}
+#mariscos{grid-area: mariscos;}
+#aguachiles{grid-area: aguachiles;}
+#ceviches{grid-area: ceviches;}
+#mariscos-images{grid-area: mariscos-images;}
+#botanas{grid-area: botanas;}
+
+
+
+body div h1, body div p, body div h3, body div table{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+body div h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 800;
+    background-image: url("images/h1_back.png");
+    background-size: cover;
+    height: 3.33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+body div h1#toppping_title_img{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    background-image: url("images/title_topping.png");
+    background-size: cover;
+    height: 10.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+body div h1#mariscos_title_img{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    background-image: url("images/mar_back.png");
+    background-size: cover;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+body div h3{
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+
+
+body div ul, body div ol{ /* Separated from previous block because it takes 100% width larger than normal */
+    margin-bottom: 1rem;
+    padding-left: 1.5rem; /* Adjust default list indentation */
+    list-style: disc;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, th {
+    /* Additional styling for table cells if needed */
+    /*border: 1px solid red;*/ /* This is optional, for cell borders */
+    padding: 0.2rem; /* This is optional, for cell padding */
+}
+.ral{
+    text-align: right;
+}
+.btop{
+    border-top: rgb(66, 66, 66) dotted 1px;
+}
+
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+
+.warning{
+    background-color: rgb(33, 33, 33);
+    color: rgb(190, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    border: rgb(190, 23, 23) solid 2px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.warning >p{
+    text-align: center;
+    margin-bottom: 0rem;
+}
+.warning >*, .warning >*>*{
+    background-color: rgb(33, 33, 33);
+    color: rgb(190, 23, 23);
+}
+
+body >div{
+    padding: 1rem;
+}
+
+
+
+.main_image{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+.pidelo-container {
+    position: relative;
+    width: 100%;
+}
+.pidelo-background{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translate(-30%, 0%);
+}
+.pidelo-title {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    transform: translate(0%, -25%);
+}
+
+  /* Style for the overlay text */
+.pidelo-overlay-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 0rem;
+    width: 60%;
+    height: auto;
+    background-color: transparent;
+    transform: translate(0%, 15%);
+}
+.pidelo-overlay-text>ul {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*backdrop-filter: blur(1px);*/
+    border-radius: 10px;
+}
+.pidelo-overlay-text>ul>li {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*backdrop-filter: blur(1px);*/
+}
+
+
+
+
+
+
+.escarchado-container {
+    position: relative;
+    width: 100%;
+}
+.escarchado-background{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translate(-15%, 0%);
+    border-bottom-right-radius: 30% 50%;
+    border-top-left-radius: 60% 50%;
+}
+.escarchado-title {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    transform: translate(0%, 0%);
+}
+
+  /* Style for the overlay text */
+.escarchado-overlay-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 0rem;
+    width: 40%;
+    height: auto;
+    background-color: transparent;
+    transform: translate(0%, 0%);
+}
+.escarchado-overlay-text>ul {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*backdrop-filter: blur(1px);*/
+    border-radius: 10px;
+}
+.escarchado-overlay-text>ul>li {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*backdrop-filter: blur(1px);*/
+}
+
+
+
+
+
+
+.topp-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "topp-title topp-title"
+    "topp-images topp-overlay-text"
+    "topp-nota topp-nota";
+}
+#topp-title{grid-area: topp-title;}
+#topp-images{grid-area: topp-images;}
+#topp-overlay-text{grid-area: topp-overlay-text;}
+#topp-nota{grid-area: topp-nota;}
+
+#topp-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.topp-background{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translate(0%, 0%);
+    border-radius: 50%;
+}
+#topp-title {
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    transform: translate(0%, 0%);
+}
+#topp-nota{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#mariscos-images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mariscos-img{
+    width: 45%;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#header-img{
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+
+#footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.open_btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900; /* Choose a weight value from 100 to 900 */
+    font-style: normal;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.open_btn:hover{
+    background-color: rgb(228, 228, 228);
+}
+.open_btn:active{
+    background-color: #ff1717;
+    color: white;
+    transform: scale(95%);
+}
+
+.close_btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0rem 0.7rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900; /* Choose a weight value from 100 to 900 */
+    font-style: normal;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #ff1717;
+    border: none;
+    border-radius: 30%;
+}
+.close_btn:hover{
+    background-color: rgb(116, 116, 116);
+    color: black;
+}
+.close_btn:active{
+    background-color: black;
+    color: white;
+    transform: scale(95%);
+}
+
+
+
+.modal{
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+}
+.modal::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+
+
+.imgs_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.imgs_div>img{
+    width: 40%;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 20%;
+}
+
+
+
+/*BE CAREFUL NOT TO AFFECT THE FOOTER*/
+body>div>h1, body>div>button, body>div>div>ul, body>div>div>img, body>div>h3, body>div>p, body>div>section, body>div>div>h3, body>div>div>p, body>div>div>table, body>div>div>div>img, body>div>div>div>ul{
+    animation: fade-in linear;
+    animation-timeline: view(100% 0%);
+}
+@keyframes fade-in{
+    from {scale: 0.6; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}
