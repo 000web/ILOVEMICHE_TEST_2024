@@ -29,9 +29,9 @@ const cerveza = {
         ]},
         {'subtitle':'Cerveza de 1/2',
         'description':'',
-        'flavors':['Corona', 'Victoria'],
+        'flavors':['Corona', 'Victoria', 'Corona Cero'],
         'table':[
-            {'option':'Corona Cero',              'price_unique':40},
+            {'option':' ',              'price_unique':40},
             {'option':'Vaso Preparado',           'price_unique':25},
             {'option':'Cubeta de Cerveza de 1/2', 'price_6pzas' :220, 'price_12pzas':440},
         ]},
@@ -48,6 +48,7 @@ const bebidas = {
     'description':'',
     'content':Array(
         {'subtitle':'Mojitos',
+        'btn':true,
         'description':'Hierbabuena, limon, azucar, pulpa, Licor Ron Bacardi. Si gustas un licor diferente, varia el precio',
         'flavors':['Limon', 'Mora Azul', 'Maracuya', 'Pepino', 'Mango (temporada)'],
         'table':[
@@ -59,7 +60,8 @@ const bebidas = {
         'table':[
             {'option':' ', 'price_litro':120,  'price_top':170},
         ]},
-        {'subtitle':'Piña Colada Frappe',
+        {'subtitle':'Piña_Colada_Frappe',
+        'btn':true,
         'description':'Jugo de piña, crema de coco, azucar, Licor Ron Bacardi. Si gustas un licor diferente, varia el precio',
         'flavors':[],
         'table':[
@@ -80,30 +82,35 @@ const bebidas = {
             {'option':'Red Label',     'price_litro':190, 'price_top':240},
         ]},
         {'subtitle':'Jacaranda',
-        'description':'Vodka Smirnoff, infusion floral, endulzante, agua mineral, limon',
+        'btn':true,
+        'description':'Vodka Smirnoff, infusion floral, endulzante, agua mineral, limon. Cambia de color, coloca el limon y toma un color morado',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':120,  'price_top':170},
         ]},
         {'subtitle':'Diablito',
-        'description':'Vodka Smirnoff tamarindo, refresco de lima, refresco de toronja, pulpa de tamarindo',
+        'btn':true,
+        'description':'Vodka Smirnoff tamarindo, refresco de lima, refresco de toronja, pulpa de tamarindo. (Con paleta de tamarindo que solo aplica en el primer litro)',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':130,  'price_top':180},
         ]},
-        {'subtitle':'Blue Love',
+        {'subtitle':'Blue_Love',
+        'btn':true,
         'description':'Vodka Smirnoff, bebida energetica, refresco de lima',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':110,  'price_top':160},
         ]},
         {'subtitle':'Bicolor',
+        'btn':true,
         'description':'Vodka Smirnoff, bebida energetica, jugo de arandano, refresco de lima',
         'flavors':[],
         'table':[
             {'option':' ', 'price_litro':110,  'price_top':160},
         ]},
-        {'subtitle':'Cielo Rosa',
+        {'subtitle':'Cielo_Rosa',
+        'btn':true,
         'description':'Vodka Smirnoff, Algodon de azucar, refresco de lima',
         'flavors':[],
         'table':[
@@ -116,6 +123,7 @@ const bebidas = {
             {'option':' ', 'price_litro':120,  'price_top':170},
         ]},
         {'subtitle':'Paloma',
+        'btn':true,
         'description':'Tequila Jose Cuervo Especial o Mezcal Moskalti',
         'flavors':[],
         'table':[
@@ -131,7 +139,7 @@ const bebidas = {
         'description':'',
         'flavors':[],
         'table':[
-            {'option':' ', 'price_unique':60},
+            {'option':'Lambrusco', 'price_unique':60},
         ]},
         {'subtitle':'Caribeñas',
         'description':'Pulpa de chamoy, limon, salsas, sal',
@@ -334,7 +342,8 @@ const aguachiles = {
     'product':'aguachiles',
     'description':'',
     'content':Array(
-        {'subtitle':'Aguachile Clasico ILOVEMICHE',
+        {'subtitle':'Aguachile_Clasico_ILOVEMICHE',
+        'btn':true,
         'description':'Camaron crudo, deliciosas salsas negras, salsa de aguachile verde, cebolla y pepino',
         'flavors':[],
         'table':[
@@ -343,7 +352,8 @@ const aguachiles = {
             {'option':'Familiar',     'price_unique_bullet':480},
             {'option':'Como Topping', 'price_unique_bullet':175},
         ]},
-        {'subtitle':'Aguachile Aguachile Verde',
+        {'subtitle':'Aguachile_Verde',
+        'btn':true,
         'description':'Camaron crudo, salsa de aguachile verde, cebolla y pepino',
         'flavors':[],
         'table':[
@@ -352,7 +362,8 @@ const aguachiles = {
             {'option':'Familiar',     'price_unique_bullet':480},
             {'option':'Como Topping', 'price_unique_bullet':175},
         ]},
-        {'subtitle':'Aguachile Mango (Temporada)',
+        {'subtitle':'Aguachile_Mango_Temporada',
+        'btn':true,
         'description':'Camaron crudo, salsa de aguachile verde, cebolla, pepino y mango',
         'flavors':[],
         'table':[
@@ -361,13 +372,26 @@ const aguachiles = {
             {'option':'Familiar',     'price_unique_bullet':490},
             {'option':'Como Topping', 'price_unique_bullet':195},
         ]},
+        {'subtitle':'Torre Taxco',
+        'description':'Camaron cristal, camaron coctelero, cebolla morada y pepino',
+        'flavors':[],
+        'table':[
+            {'option':' ', 'price_unique':250},
+        ]},
+        {'subtitle':'Culichi',
+        'description':'Camaron cristal, camaron coctelero, pulpo, cebolla morada y pepino',
+        'flavors':[],
+        'table':[
+            {'option':' ', 'price_unique':250},
+        ]},
     ),
 };
 const ceviches = {
     'product':'ceviches',
     'description':'',
     'content':Array(
-        {'subtitle':'Ceviche Clasico ILOVEMICHE',
+        {'subtitle':'Ceviche_Clasico_ILOVEMICHE',
+        'btn':true,
         'description':'Camaron crudo, clamato, deliciosas salsas negras, jitomate, cebolla, pepino y cilantro',
         'flavors':[],
         'table':[
@@ -385,20 +409,9 @@ const ceviches = {
             {'option':'Familiar',     'price_unique_bullet':510},
             {'option':'Como Topping', 'price_unique_bullet':220},
         ]},
-        {'subtitle':'Torre Taxco',
-        'description':'Camaron cristal, camaron coctelero, cebolla morada y pepino',
-        'flavors':[],
-        'table':[
-            {'option':' ', 'price_unique':250},
-        ]},
-        {'subtitle':'Torre ILOVEMICHE',
+        {'subtitle':'Torre_ILOVEMICHE',
+        'btn':true,
         'description':'Camaron cristal, camaron coctelero, pulpo, cebolla morada, pepino y jitomate',
-        'flavors':[],
-        'table':[
-            {'option':' ', 'price_unique':250},
-        ]},
-        {'subtitle':'Culichi',
-        'description':'Camaron cristal, camaron coctelero, pulpo, cebolla morada y pepino',
         'flavors':[],
         'table':[
             {'option':' ', 'price_unique':250},
@@ -484,8 +497,15 @@ products_iterable.forEach(product => {
         js_content.forEach(block => {
             if (block.subtitle.length > 0) {
                 const subtitle = document.createElement('h3');
-                subtitle.innerText = block.subtitle;
-                html_content.appendChild(subtitle)
+                subtitle.innerText = block.subtitle.replace(/_/g, ' ');
+                html_content.appendChild(subtitle);
+                if(block.btn && block.btn==true){
+                    const btn = document.createElement('button');
+                    btn.innerText = 'Ver Imagenes';
+                    btn.classList.add('open_btn', 'lal');
+                    btn.id = `open_${block.subtitle.toLowerCase()}`;
+                    html_content.appendChild(btn);
+                }
             }
             if (block.description.length > 0) {
                 const description = document.createElement('p');
@@ -715,16 +735,141 @@ close_cerveza.addEventListener("click", ()=>{
     modal_cerveza.close();
 });
 
-const modal_bebidas = document.querySelector("#modal_bebidas");
-const open_bebidas  = document.querySelector("#open_bebidas");
-const close_bebidas = document.querySelector("#close_bebidas");
-open_bebidas.addEventListener("click", ()=>{
-    modal_bebidas.showModal();
+const modal_mojitos = document.querySelector("#modal_mojitos");
+const open_mojitos  = document.querySelector("#open_mojitos");
+const close_mojitos = document.querySelector("#close_mojitos");
+open_mojitos.addEventListener("click", ()=>{
+    modal_mojitos.showModal();
 });
-close_bebidas.addEventListener("click", ()=>{
-    modal_bebidas.close();
+close_mojitos.addEventListener("click", ()=>{
+    modal_mojitos.close();
 });
 
+const modal_piña_colada_frappe = document.querySelector("#modal_piña_colada_frappe");
+const open_piña_colada_frappe  = document.querySelector("#open_piña_colada_frappe");
+const close_piña_colada_frappe = document.querySelector("#close_piña_colada_frappe");
+open_piña_colada_frappe.addEventListener("click", ()=>{
+    modal_piña_colada_frappe.showModal();
+});
+close_piña_colada_frappe.addEventListener("click", ()=>{
+    modal_piña_colada_frappe.close();
+});
+
+const modal_jacaranda = document.querySelector("#modal_jacaranda");
+const open_jacaranda  = document.querySelector("#open_jacaranda");
+const close_jacaranda = document.querySelector("#close_jacaranda");
+open_jacaranda.addEventListener("click", ()=>{
+    modal_jacaranda.showModal();
+});
+close_jacaranda.addEventListener("click", ()=>{
+    modal_jacaranda.close();
+});
+
+const modal_diablito = document.querySelector("#modal_diablito");
+const open_diablito  = document.querySelector("#open_diablito");
+const close_diablito = document.querySelector("#close_diablito");
+open_diablito.addEventListener("click", ()=>{
+    modal_diablito.showModal();
+});
+close_diablito.addEventListener("click", ()=>{
+    modal_diablito.close();
+});
+
+const modal_blue_love = document.querySelector("#modal_blue_love");
+const open_blue_love  = document.querySelector("#open_blue_love");
+const close_blue_love = document.querySelector("#close_blue_love");
+open_blue_love.addEventListener("click", ()=>{
+    modal_blue_love.showModal();
+});
+close_blue_love.addEventListener("click", ()=>{
+    modal_blue_love.close();
+});
+
+const modal_bicolor = document.querySelector("#modal_bicolor");
+const open_bicolor  = document.querySelector("#open_bicolor");
+const close_bicolor = document.querySelector("#close_bicolor");
+open_bicolor.addEventListener("click", ()=>{
+    modal_bicolor.showModal();
+});
+close_bicolor.addEventListener("click", ()=>{
+    modal_bicolor.close();
+});
+
+const modal_cielo_rosa = document.querySelector("#modal_cielo_rosa");
+const open_cielo_rosa  = document.querySelector("#open_cielo_rosa");
+const close_cielo_rosa = document.querySelector("#close_cielo_rosa");
+open_cielo_rosa.addEventListener("click", ()=>{
+    modal_cielo_rosa.showModal();
+});
+close_cielo_rosa.addEventListener("click", ()=>{
+    modal_cielo_rosa.close();
+});
+
+const modal_paloma = document.querySelector("#modal_paloma");
+const open_paloma  = document.querySelector("#open_paloma");
+const close_paloma = document.querySelector("#close_paloma");
+open_paloma.addEventListener("click", ()=>{
+    modal_paloma.showModal();
+});
+close_paloma.addEventListener("click", ()=>{
+    modal_paloma.close();
+});
+
+const modal_aguachile_clasico_ilovemiche = document.querySelector("#modal_aguachile_clasico_ilovemiche");
+const open_aguachile_clasico_ilovemiche  = document.querySelector("#open_aguachile_clasico_ilovemiche");
+const close_aguachile_clasico_ilovemiche = document.querySelector("#close_aguachile_clasico_ilovemiche");
+open_aguachile_clasico_ilovemiche.addEventListener("click", ()=>{
+    modal_aguachile_clasico_ilovemiche.showModal();
+});
+close_aguachile_clasico_ilovemiche.addEventListener("click", ()=>{
+    modal_aguachile_clasico_ilovemiche.close();
+});
+
+const modal_aguachile_verde = document.querySelector("#modal_aguachile_verde");
+const open_aguachile_verde  = document.querySelector("#open_aguachile_verde");
+const close_aguachile_verde = document.querySelector("#close_aguachile_verde");
+open_aguachile_verde.addEventListener("click", ()=>{
+    modal_aguachile_verde.showModal();
+});
+close_aguachile_verde.addEventListener("click", ()=>{
+    modal_aguachile_verde.close();
+});
+
+const modal_aguachile_mango_temporada = document.querySelector("#modal_aguachile_mango_temporada");
+const open_aguachile_mango_temporada  = document.querySelector("#open_aguachile_mango_temporada");
+const close_aguachile_mango_temporada = document.querySelector("#close_aguachile_mango_temporada");
+open_aguachile_mango_temporada.addEventListener("click", ()=>{
+    modal_aguachile_mango_temporada.showModal();
+});
+close_aguachile_mango_temporada.addEventListener("click", ()=>{
+    modal_aguachile_mango_temporada.close();
+});
+
+const modal_ceviche_clasico_ilovemiche = document.querySelector("#modal_ceviche_clasico_ilovemiche");
+const open_ceviche_clasico_ilovemiche  = document.querySelector("#open_ceviche_clasico_ilovemiche");
+const close_ceviche_clasico_ilovemiche = document.querySelector("#close_ceviche_clasico_ilovemiche");
+open_ceviche_clasico_ilovemiche.addEventListener("click", ()=>{
+    modal_ceviche_clasico_ilovemiche.showModal();
+});
+close_ceviche_clasico_ilovemiche.addEventListener("click", ()=>{
+    modal_ceviche_clasico_ilovemiche.close();
+});
+
+const modal_torre_ilovemiche = document.querySelector("#modal_torre_ilovemiche");
+const open_torre_ilovemiche  = document.querySelector("#open_torre_ilovemiche");
+const close_torre_ilovemiche = document.querySelector("#close_torre_ilovemiche");
+open_torre_ilovemiche.addEventListener("click", ()=>{
+    modal_torre_ilovemiche.showModal();
+});
+close_torre_ilovemiche.addEventListener("click", ()=>{
+    modal_torre_ilovemiche.close();
+});
+
+
+
+
+
+/*
 const modal_cubetas = document.querySelector("#modal_cubetas");
 const open_cubetas  = document.querySelector("#open_cubetas");
 const close_cubetas = document.querySelector("#close_cubetas");
@@ -784,3 +929,4 @@ open_botanas.addEventListener("click", ()=>{
 close_botanas.addEventListener("click", ()=>{
     modal_botanas.close();
 });
+*/
