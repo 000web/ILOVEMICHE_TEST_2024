@@ -578,13 +578,13 @@ body >div{
     border: none;
 }
 .modal::-webkit-backdrop{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     /*backdrop-filter: blur(20px);*/
     -webkit-filter: blur(20px);
             filter: blur(20px); /* Adjust the blur value as needed */
 }
 .modal::backdrop{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     /*backdrop-filter: blur(20px);*/
     -webkit-filter: blur(20px);
             filter: blur(20px); /* Adjust the blur value as needed */
