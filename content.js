@@ -1035,9 +1035,9 @@ const costillas = {
             'description': '',
             'flavors': [],
             'table': [
-                {'item':'300 g', 'detail':'', 'price':135},
-                {'item':'50 g',  'detail':'', 'price':230},
-                {'item':'1 Kg',  'detail':'', 'price':460},
+                {'item':'300 g', 'detail':'', 'price':145},
+                {'item':'500 g', 'detail':'', 'price':245},
+                {'item':'1 Kg',  'detail':'', 'price':465},
             ]
         },
     ],
@@ -1133,10 +1133,10 @@ const hamburguesas = {
             'table': [
                 {'item': 'SENCILLA', 'detail': 'Carne mixta / lechuga / jitomate / cebolla caramelizada / queso manchego',                                       'price': 115},
                 {'item': 'HAWAIANA',        'detail': 'Carne mixta / lechuga / jitomate / piña / tocino / cebolla caramelizada / queso manchego / jamón',         'price': 130},
-                {'item': 'CANADIENSE',    'detail': 'Pechuga empanizada / lechuga / jitomate / cebolla caramelizada / queso manchego / tocino / salsa BBQ',         'price': 125},
-                {'item': 'TAXQUEÑA',    'detail': 'Carne al pastor / chile morrón / piña / queso manchego / cebolla caramelizada',         'price': 135},
-                {'item': 'MEXICANA',    'detail': 'Carne arrachera / lechuga / jitomate / cebolla caramelizada / queso manchego / guacamole', 'price': 135},
-                {'item': 'MAMALONA',    'detail': 'Combinación de SENCILLA / HAWAIANA / CANADIENSE', 'price': 295},
+                {'item': 'CANADIENSE',    'detail': 'Pechuga empanizada / lechuga / jitomate / cebolla caramelizada / queso manchego / tocino / salsa BBQ',         'price': 130},
+                {'item': 'TAXQUEÑA',    'detail': 'Carne al pastor / chile morrón / piña / queso manchego / cebolla caramelizada',         'price': 130},
+                {'item': 'MEXICANA',    'detail': 'Carne arrachera / lechuga / jitomate / cebolla caramelizada / queso manchego / guacamole', 'price': 140},
+                {'item': 'MAMALONA',    'detail': 'Combinación de SENCILLA / HAWAIANA / CANADIENSE', 'price': 300},
             ]
         },
     ],
